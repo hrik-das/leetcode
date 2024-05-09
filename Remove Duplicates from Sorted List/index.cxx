@@ -37,7 +37,7 @@ ListNode* createLinkedList(const std::vector<int>& values){
 }
 void printLinkedList(ListNode* head){
     while(head){
-        std::cout<<head->val<<" ";
+        std::cout<<head->val<<"->";
         head = head->next;
     }
     std::cout<<"NULL"<<std::endl;
