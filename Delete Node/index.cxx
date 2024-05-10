@@ -6,7 +6,7 @@ public:
     ListNode(int x) : val(x), next(nullptr){}
 };
 class Solution{
-public:
+    public:
     void deleteNode(ListNode* node){
         if(node == nullptr || node->next == nullptr){
             return;
