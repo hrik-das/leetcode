@@ -5,10 +5,8 @@ class Solution{
     public:
     std::string reversePrefix(std::string word, char ch){
         auto pos = word.find(ch);
-        std::cout<<pos<<std::endl;
-        if(pos != std::string::npos){
+        if(pos != std::string::npos)
             std::reverse(word.begin(), word.begin() + pos + 1);
-        }
         return word;
     }
 };
