@@ -9,7 +9,7 @@ class Solution{
         std::vector<int> minCost(n);        
         minCost[0] = cost[0];
         minCost[1] = cost[1];
-        for (int i=2; i<n; i++)
+        for(int i=2; i<n; i++)
             minCost[i] = cost[i] + std::min(minCost[i - 1], minCost[i - 2]);
         return std::min(minCost[n - 1], minCost[n - 2]);
     }
