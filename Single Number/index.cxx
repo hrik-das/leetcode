@@ -4,9 +4,8 @@ class Solution{
     public:
     int singleNumber(std::vector<int>& nums){
         int uniqueValue = 0;
-        for(int num : nums){
+        for(int num : nums)
             uniqueValue ^= num;
-        }
         return uniqueValue;
     }
 };
