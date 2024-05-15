@@ -6,8 +6,7 @@
 class Solution{
     public:
     int romanToInt(const std::string& s){
-        int total = 0;
-        int n = s.length();
+        int total = 0, n = s.length();
         std::unordered_map<char, int> roman{{'I', 1}, {'V', 5}, {'X', 10},{'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
         std::unordered_set<std::string> subtractiveCombinations{"IV", "IX", "XL", "XC", "CD", "CM"};
         for(int i = 0; i < n; ++i){
