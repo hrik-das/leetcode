@@ -4,9 +4,7 @@
 class Solution{
     public:
     void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n){
-        int index1 = m - 1;
-        int index2 = n - 1;
-        int mergedIndex = m + n - 1;
+        int index1 = m - 1, index2 = n - 1, mergedIndex = m + n - 1;
         while(index1 >= 0 && index2 >= 0){
             if(nums1[index1] > nums2[index2])
                 nums1[mergedIndex--] = nums1[index1--];
@@ -17,7 +15,7 @@ class Solution{
             nums1[mergedIndex--] = nums2[index2--];
     }
 };
-int main(int argc, char* argv[]){
+int main(int argc, const char** argv[]){
     Solution ob;
     std::vector<std::vector<int>> nums1 = {{1, 2, 3, 0, 0, 0}, {1}, {0}};
     std::vector<int> m = {3, 1, 0};
