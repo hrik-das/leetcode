@@ -29,7 +29,7 @@ class Solution{
     double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2){
         int i = 0, j = 0;
         std::vector<int> merged;
-        while(i < nums1.size() && j < nums2.size()){
+        while(i<nums1.size() && j<nums2.size()){
             if(nums1[i] < nums2[j]){
                 merged.push_back(nums1[i]);
                 i++;
