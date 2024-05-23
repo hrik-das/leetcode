@@ -4,7 +4,8 @@
 class Solution{
     public:
     std::string zigzagConversion(std::string& str, int numRows){
-        if(numRows == 1 || numRows >= str.length()) return str;
+        if(numRows == 1 || numRows >= str.length())
+            return str;
         std::vector<std::string> rows(numRows, "");
         bool goingDown = false;
         int currentRow = 0;
