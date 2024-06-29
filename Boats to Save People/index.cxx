@@ -7,8 +7,7 @@ class Solution{
         std::sort(people.begin(), people.end());
         int boats = 0, left = 0, right = people.size() - 1;
         while(left <= right){
-            if(people[left] + people[right] <= limit)
-                left++;
+            if(people[left] + people[right] <= limit) left++;
             right--;
             boats++;
         }
